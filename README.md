@@ -61,19 +61,7 @@ This C++ simulator models the end‑to‑end workflow of a physiotherapy clinic.
 - **Per‑Patient Logs:** Start/end times, waiting times, treatment durations, cancellation/reschedule status  
 - **Summary Statistics:** Averages, utilization rates, cancellation and rescheduling percentages
 
----
 
-## 📁 Repository Structure
-
-```
-.
-├── src/                # C++ source files
-├── include/            # Header files
-├── testcases/          # Sample inputs and expected outputs
-├── docs/               # Design docs and reports
-├── CMakeLists.txt      # Build configuration
-└── README.md           # Project overview and instructions
-```
 
 ---
 
