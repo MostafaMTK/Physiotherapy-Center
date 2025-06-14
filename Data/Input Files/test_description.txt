@@ -1,0 +1,6 @@
+Normal : The normal flow and different durations of elements in each list.
+Early&Late : The normal flow and different durations of elements in each list.
+Devices : Available device resources, becoming unavailable, then available. & Room capacity &gt; 1 and going available, full, and available again.
+Rearrange : How the treatment order is handled in N-patients and R-patients.
+Cancel : Accepted and not accepted cancel operations.
+Resc : Accepted rescheduling operation.

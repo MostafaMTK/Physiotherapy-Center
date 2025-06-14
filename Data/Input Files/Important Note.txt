@@ -1,0 +1,35 @@
+# The Input File Format
+
+- Line 1 contains NE (the number of all E-therapy devices), NU (the number of all U-therapy devices), NG (the number of all X-therapy Gym rooms).
+- Line 2 contains the capacity of each NG room.
+- Line 3 contains the cancel and rescheduling probability Pcancel and Presc %, two integers from 0 to 100.
+- Line 4 contains P (the number of all patients).
+- Then P lines, where each line represents the information of a patient.
+- Each of the P lines contains:
+  1. Patient Type: one char, N for normal, and R for recovering.
+  2. Appointment time (PT) and Arrival time (VT).
+  3. Number of required treatments by this patient (NT), then for each required treatment, input its Type and Duration. Each treatment type is one char: E for E-therapy, U for U-therapy, and X for X-therapy.
+
+Note: each patient can have at most 3 treatment types and cannot have the same treatment type more than once.
+
+Example 1:
+N 50 40 2 U 10 X 5
+This patient is normal (N), has an appointment at timestep 50, will arrive at timestep 40, and has 2 required treatments: a U-therapy for 10 timesteps (duration) then an X-therapy for 5 timesteps (treatment order matters).
+
+Example 2:
+R 30 35 3 U 6 E 5 X 10
+This patient is recovering (R), has an appointment at 30, will arrive at 35 (late), and has 3 required treatments: a U-therapy for 6 timesteps, an E-therapy for 5 timesteps, then an X-therapy for 10 timesteps.
+
+
+Please Match This format to work fine I'm not responsible of if you did anything else .
+
+For Example :
+
+3 1 2        ☐ 3 E-therapy devices, 1 U-therapy device, 2 X-therapy gym rooms.
+10 5         ☐ For the 2 gym rooms, capacity of 1st is 10 patients, and 2nd is 5.
+10 30        ☐ Pcancel = 10% and Presc = 30%.
+4            ☐ 4 patients, then we have 4 lines next, one per patient.
+N 30 25 3 E 5 U 12 X 10
+R 30 35 3 U 6 E 5 X 10
+R 50 40 1 X 5
+N 40 40 2 X 15 U 10
